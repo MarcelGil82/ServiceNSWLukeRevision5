@@ -15,16 +15,16 @@
 // console.log(numbers.sort(compareNumbers));
 
 // Q1. Create an array of numbers and sort them from largest to smallest
-// let myNums = [10, 16, 9, 21];
-// function sortToLargest(num1, num2) {
-//     if (num1 < num2) {
-//         return 1;
-//     } else if (num1 > num2) {
-//         return -1;
-//     } else {
-//         return 0;
-//     }
-// }
+let myNums = [10, 16, 9, 21];
+function sortToLargest(num1, num2) {
+    if (num1 < num2) {
+        return 1;
+    } else if (num1 > num2) {
+        return -1;
+    } else {
+        return 0;
+    }
+}
 
 // console.log(myNums.sort(sortToLargest))
 
@@ -68,25 +68,25 @@
 
 // Q2. Create a sort function that will sort the following array of events into chronological order:
 
-// let events = [
-//     {
-//         name: "Went on holiday",
-//         month: 3,
-//         year: 2019
-//     }, {
-//         name: "Got first car",
-//         month: 5,
-//         year: 2015
-//     }, {
-//         name: "Moved out of home",
-//         month: 11,
-//         year: 2019
-//     }
-// ];
+let events = [
+    {
+        name: "Went on holiday",
+        month: 3,
+        year: 2019
+    }, {
+        name: "Got first car",
+        month: 5,
+        year: 2015
+    }, {
+        name: "Moved out of home",
+        month: 11,
+        year: 2019
+    }
+];
 
-// function sortByYear (event1, event2) {
-//     return event1.year - event2.year;
-// }
+function sortByYear (event1, event2) {    
+    return event1.year - event2.year;
+}
 // function sortByMonth(event1, event2) {
 //     return event1.month - event2.month
 // }
@@ -110,25 +110,15 @@ let people = [
     }
 ];
 
-function sortByFirstName(person1, person2) {
-    if (person1.firstName.toLowerCase() < person2.firstName.toLowerCase()) {
-        return -1;
-    } else if (person1.firstName.toLowerCase() > person2.firstName.toLowerCase()) {
-        return 1;
-    } else {
-        return 0;
-    }
-};
-
-function sortByLastName(person1, person2) {
-    if (person1.lastName.toLowerCase() < person2.lastName.toLowerCase()) {
-        return -1;
-    } else if (person1.lastName.toLowerCase() > person2.lastName.toLowerCase()) {
-        return 1;
-    } else {
-        return 0;
-    }
-}
+// function sortByFirstName(person1, person2) {
+//     if (person1.firstName.toLowerCase() < person2.firstName.toLowerCase()) {
+//         return -1;
+//     } else if (person1.firstName.toLowerCase() > person2.firstName.toLowerCase()) {
+//         return 1;
+//     } else {
+//         return 0;
+//     }
+// };
 
 // function sortByLastName(person1, person2) {
 //     if (person1.lastName.toLowerCase() < person2.lastName.toLowerCase()) {
@@ -139,9 +129,6 @@ function sortByLastName(person1, person2) {
 //         return 0;
 //     }
 // }
-// function sortByFirstName(person1, person2) {
-//     return person1.firstName - person2.firstName;
-// }
 
-let nameOrder = people.sort(sortByFirstName).sort(sortByLastName);
-console.log(nameOrder)
+// let nameOrder = people.sort(sortByFirstName).sort(sortByLastName);
+// console.log(nameOrder)

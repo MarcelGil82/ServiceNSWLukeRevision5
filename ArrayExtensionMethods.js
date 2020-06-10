@@ -182,21 +182,21 @@
 // console.log(animalWithVowel)
 
 // Q3. Create an array of pets (name, age, owner) and use array extension methods to find whether any of the pets are owned by Luke.
-// let pets = [
-//     {
-//         name: "Fido",
-//         age: 6,
-//         owner: "Quinn"
-//     }, {
-//         name: "Spot",
-//         age: 2,
-//         owner: "Luke"
-//     }, {
-//         name: "Quincy",
-//         age: 4,
-//         owner: "Caleb"
-//     }
-// ];
+let pets = [
+    {
+        name: "Fido",
+        age: 6,
+        owner: "Quinn"
+    }, {
+        name: "Spot",
+        age: 2,
+        owner: "Luke"
+    }, {
+        name: "Quincy",
+        age: 4,
+        owner: "Caleb"
+    }
+];
 
 // let petOwnedByLuke = pets.some(pets => pets.owner == "Luke") 
 // console.log(petOwnedByLuke)
@@ -204,3 +204,21 @@
 // Q4. Jimmy is scared of the letter Q, write some code that takes in an array of pet objects (name, age, owner) 
 // and tells Jimmy's parents if the array contains any pets that have a name or owner with the letter Q. 
 // You must use a for..in loop for this.
+
+// for (const pet in pets) {
+//     if (pet.name.toLowerCase().some("q") || pet.owner.toLowerCase().some("q")) {
+//         console.log(pet.name + pet.owner)
+//     }
+// }
+// Luke's Code
+// function findPetIncludingQ(pet) {
+//     for (const key in pet) {
+//         const element = pet[key].toString().toLowerCase();
+//         if (element.includes("q")) {
+//             return true;
+//         }
+//     }
+// }
+
+// let hasQ = pets.some(findPetIncludingQ);
+// console.log(hasQ)
