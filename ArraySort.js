@@ -87,11 +87,11 @@ let events = [
 function sortByYear (event1, event2) {    
     return event1.year - event2.year;
 }
-// function sortByMonth(event1, event2) {
-//     return event1.month - event2.month
-// }
-// let chronologicalOrder = events.sort(sortByMonth).sort(sortByYear)
-// console.log(chronologicalOrder)
+function sortByMonth(event1, event2) {
+    return event1.month - event2.month
+}
+let chronologicalOrder = events.sort(sortByMonth).sort(sortByYear)
+console.log(chronologicalOrder)
 
 // Q3. Sort the following array in alphabetical order by last name, then by first name
 let people = [

@@ -211,14 +211,14 @@ let pets = [
 //     }
 // }
 // Luke's Code
-// function findPetIncludingQ(pet) {
-//     for (const key in pet) {
-//         const element = pet[key].toString().toLowerCase();
-//         if (element.includes("q")) {
-//             return true;
-//         }
-//     }
-// }
+function findPetIncludingQ(pet) {
+    for (const key in pet) {
+        const element = pet[key].toString().toLowerCase;
+        if (element.includes("q")) {
+            return true;
+        }
+    }
+}
 
-// let hasQ = pets.some(findPetIncludingQ);
-// console.log(hasQ)
+let hasQ = pets.some(findPetIncludingQ);
+console.log(hasQ)
